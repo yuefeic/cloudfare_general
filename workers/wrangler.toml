@@ -1,0 +1,9 @@
+name = "general"
+type = "webpack"
+account_id = "6748c5b182cc1a27bf875457536f0eab"
+workers_dev = true
+route = ""
+zone_id = ""
+kv_namespaces = [
+    { binding = "CHLOE_KV", preview_id = "3bd0445349094fab91f4f9c8b66e33ae", id = "17db6247ef48485d9c96576130251a56" }
+]

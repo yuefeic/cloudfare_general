@@ -1,0 +1,29 @@
+.showbody {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .postWrapper {
+    width: 80%;
+    height: 100px;
+    background: #999;
+    border-radius: 10px;
+    border: 1px solid #61dafb;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .user {
+    font-size: 10px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
