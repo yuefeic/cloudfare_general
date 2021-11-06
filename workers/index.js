@@ -3,7 +3,7 @@ import { Router } from 'itty-router'
 const router = Router()
 
 const headers = {
-  'Access-Control-Allow-Origin': '*',
+  "Access-Control-Allow-Origin": "*",
   "Content-Type": "application/json"
 };
 router.get('/posts', () => new Response(JSON.stringify({
@@ -33,6 +33,12 @@ router.post('/posts', async request => {
     headers
   })
 })
+
+router.options('/posts', () => new Response("success", { headers:{
+  "Access-Control-Allow-Origin": "*",
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Headers": "*"
+} }))
 
 router.all("*", () => new Response("404, not found!", { status: 404 }))
 
